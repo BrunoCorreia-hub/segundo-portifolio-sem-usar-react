@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+@keyframes flutuar {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primaria: #4f46e5;
+    --secundaria: #7c3aed;
+    --escuro: #0f172a;
+    --maisEscuro: #0a0f1c;
+    --claro: #e2e8f2;
+    --vidro: rgba(255, 255, 255, 0.1);
+    --transparent: rgba(0, 0, 0, 0.2);
+    --azul: #12d7e7;
+}
+
+body {
+    background-color: var(--maisEscuro);
+    width: 100%;
+}
+
+.menu-navegacao{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    padding: 20px;
+    z-index: 2;
+    background-color: var(--transparent);
+    width: 100%;
+    
+}
+
+.link-navegacao{
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--claro);
+    position: relative;
+    padding: 8px 0;
+}
+
+.link-navegacao::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background-color: var(--azul);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s;
+    border-radius: 3px;
+}
+
+.link-navegacao:hover::after{
+    width: 100%;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+}
+
+.imagem-cabecalho{
+    max-width: 330px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px var(--azul);
+    animation: flutuar 5s ease-in-out infinite;
+}
+
+.titulo-cabecalho{
+    font-size: 85px;
+    color: var(--claro);
+}
+
+.paragrafo-cabecalho{
+    font-size: 45px;
+    font-weight: 600;
+    color: var(--claro);
+}
+
+.secao{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.titulo-secao{
+    color: var(--claro);
+    text-align: center;
+    font-size: 60px;
+}
+
+.caixa-secao{
+    background-color: var(--vidro);
+    width: 60%;
+    padding: 15px;
+    border-radius: 8px;
+    color: var(--claro);
+    font-size: 25px;
+}
+
+.projeto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+
+.titulo-projeto{
+    text-align: center;
+    color: var(--claro);
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+.display-projetos{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+}
+
+.caixa-projeto{
+    background-color: var(--vidro);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+    border-radius: 8px;   
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.caixa-projeto:hover{
+    box-shadow: 0 0 10px var(--azul);
+    transform: translateY(-20px) scale(1.05);
+}
+
+.caixa-projeto-imagem{
+    max-width: 150px; 
+}
+
+.caixa-projeto-titulo{
+    color: var(--claro);
+    font-size: 20px;
+}
+
+.caixa-projeto-paragrafo{
+    color: var(--claro);
+    text-align: center;
+}
+
+.contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    height: 100vh;
+}
+
+.titulo-contato{
+    color: var(--claro);
+    font-size: 50px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--vidro);
+    padding: 30px;
+    border-radius: 8px;
+    width: 500px;
+    
+}
+
+.input-contato{
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.textarea-contato{
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+}
+
+button{
+    background-color: var(--secundaria);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: var(--claro);
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.05);
+    opacity: 0.7;
+    border-bottom: 2px solid var(--azul);
+    border-right: 2px solid var(--azul);
+    color: var(--azul);
+}
