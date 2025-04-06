@@ -240,3 +240,106 @@ button:hover{
     border-right: 2px solid var(--azul);
     color: var(--azul);
 }
+
+@media (max-width: 1100px){
+    .display-projetos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        justify-items: center;
+      }
+  }
+
+@media (max-width: 650px) {
+    .menu-navegacao {
+      flex-direction: row;
+      gap: 20px;
+      padding: 10px;
+    }
+  
+    .link-navegacao {
+      font-size: 20px;
+    }
+  
+    .cabecalho {
+      padding: 40px 20px;
+    }
+  
+    .titulo-cabecalho {
+      font-size: 45px;
+      text-align: center;
+    }
+  
+    .paragrafo-cabecalho {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .secao {
+      padding: 20px;
+      height: 100vh;
+    }
+  
+    .titulo-secao {
+      font-size: 40px;
+      margin-top: 50px;
+    }
+  
+    .caixa-secao {
+      width: 90%;
+      font-size: 18px;
+    }
+  
+    .titulo-projeto {
+      font-size: 35px;
+      margin-top: 45px;
+    }
+  
+    .display-projetos {
+      grid-template-columns: 1fr;
+      gap: 30px;
+      justify-items: center;
+    }
+  
+    .caixa-projeto {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .caixa-projeto-imagem {
+      max-width: 100px;
+    }
+  
+    .caixa-projeto-titulo {
+      font-size: 18px;
+    }
+  
+    .caixa-projeto-paragrafo {
+      font-size: 16px;
+    }
+  
+    .contatos {
+      padding: 20px;
+      height: 100vh;
+      gap: 40px;
+    }
+  
+    .titulo-contato {
+      font-size: 35px;
+    }
+  
+    form {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .input-contato,
+    .textarea-contato {
+      font-size: 16px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }
+  
+  
