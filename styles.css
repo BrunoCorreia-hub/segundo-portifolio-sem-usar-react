@@ -242,34 +242,45 @@ button:hover{
     color: var(--azul);
 }
 
+.caixa-link{
+  display: flex;
+  gap: 20px;
+}
+
 .link{
   text-decoration: none;
   text-transform: uppercase;
   color: var(--secundaria);
   font-weight: 600;
-  font-size: 20px;
+  font-size: 17px;
   margin-top: 10px;
   transition: 0.3s;
+  padding: 0 7px;
+  border-radius: 15px;
 }
 
 .link:hover{
   color: var(--azul);
+  box-shadow: 0 0 7px var(--azul);
 }
 
-.link::after{
-  content:'';
-  height: 3px;
-  width: 0;
-  background-color: var(--azul);
-  position: absolute;
-  bottom: 10px;
-  left: 28%;
-  transition: 0.4s;
-  border-radius: 3px;
+.link-git{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--escuro);
+  background-color: var(--secundaria);
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 10px;
+  transition: 0.3s;
+  padding: 0 7px;
+  border-radius: 15px;
 }
 
-.link:hover::after{
-  width: 45%;
+.link-git:hover{
+  background: transparent;
+  box-shadow: 0 3px 5px var(--secundaria);
+  color: var(--azul);
 }
 
 @media (max-width: 1100px){
@@ -373,4 +384,35 @@ button:hover{
     }
   }
   
-  
+@media (max-width: 940px) and (orientation: landscape){
+  .navegacao{
+    position: fixed;
+    top: 0;
+  }
+
+  .link-navegacao{
+    font-size: 15px;
+  }
+
+  .cabecalho{
+    margin-top: 100px;
+    gap: 5px;
+  }
+
+  .imagem-cabecalho{
+    max-width: 160px;
+  }
+
+  .titulo-cabecalho{
+    font-size: 40px;
+  }
+
+  .paragrafo-cabecalho{
+    font-size: 35px;
+  }
+
+  .secao{
+    
+    
+  }
+}
