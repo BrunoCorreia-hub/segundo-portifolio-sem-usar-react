@@ -151,7 +151,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 13px;
+    gap: 1rem;
+    padding: 0.7rem;
     border-radius: 8px;   
     cursor: pointer;
     transition: 0.3s;
