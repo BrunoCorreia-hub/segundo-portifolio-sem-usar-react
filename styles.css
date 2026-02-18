@@ -301,6 +301,15 @@ button:hover{
   margin-bottom: 40px;
 }
 
+.caixa-icon{
+  display: flex;
+}
+
+.icon{
+  width: 35px;
+  height: 35px;
+}
+
 @media (max-width: 1100px){
     .display-projetos {
         grid-template-columns: repeat(2, 1fr);
